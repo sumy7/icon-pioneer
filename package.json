@@ -1,0 +1,23 @@
+{
+  "name": "icon-pioneer",
+  "version": "1.0.0",
+  "description": "A simple icon library",
+  "license": "MIT",
+  "main": "dist/icons.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "icons": "npm run build",
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack server --config webpack.dev.config.js"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^18.3.1",
+    "svg-sprite-loader": "^6.0.11",
+    "vue": "^3.4.27",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  }
+}
